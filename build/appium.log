@@ -1,0 +1,135 @@
+2017-11-07 11:11:52:126 - info: [Appium] Welcome to Appium v1.7.1
+2017-11-07 11:11:52:128 - info: [Appium] Non-default server args:
+2017-11-07 11:11:52:128 - info: [Appium]   sessionOverride: true
+2017-11-07 11:11:52:129 - info: [Appium]   log: /Users/purushothamreddy/Documents/training/appium/build/appium.log
+2017-11-07 11:11:52:161 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2017-11-07 11:11:53:245 - info: [HTTP] --> GET /wd/hub/status {}
+2017-11-07 11:11:53:247 - info: [debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+2017-11-07 11:11:53:255 - info: [debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.1","revision":null}}
+2017-11-07 11:11:53:259 - info: [HTTP] <-- GET /wd/hub/status 200 12 ms - 83 
+2017-11-07 11:11:53:803 - info: [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},"requiredCapabilities":{},"capabilities":{"desiredCapabilities":{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}}
+2017-11-07 11:11:53:804 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},{},{"desiredCapabilities":{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}]
+2017-11-07 11:11:53:805 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1510053113805 (16:41:53 GMT+0530 (IST))
+2017-11-07 11:11:53:806 - info: [Appium] Creating new AndroidDriver (v1.28.1) session
+2017-11-07 11:11:53:806 - info: [Appium] Capabilities:
+2017-11-07 11:11:53:808 - info: [Appium]   appPackage: 'com.quikr'
+2017-11-07 11:11:53:808 - info: [Appium]   appActivity: 'com.quikr.old.SplashActivity'
+2017-11-07 11:11:53:808 - info: [Appium]   appium-version: '1.7.1'
+2017-11-07 11:11:53:808 - info: [Appium]   newCommandTimeout: 120
+2017-11-07 11:11:53:808 - info: [Appium]   platformVersion: '6.0'
+2017-11-07 11:11:53:808 - info: [Appium]   platformName: 'Android'
+2017-11-07 11:11:53:808 - info: [Appium]   deviceName: 'Google Nexus 5x'
+2017-11-07 11:11:53:808 - info: [Appium]   avd: 'testAVD'
+2017-11-07 11:11:53:808 - info: [Appium]   avdReadyTimeout: 120000
+2017-11-07 11:11:53:815 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: appium-version.
+2017-11-07 11:11:53:816 - info: [BaseDriver] Session created with session id: b0411033-e31d-42bf-9bc6-0ec2869ae95e
+2017-11-07 11:11:53:817 - info: [debug] [AndroidDriver] Getting Java version
+2017-11-07 11:11:53:901 - info: [AndroidDriver] Java version is: 1.8.0_151
+2017-11-07 11:11:53:903 - info: [ADB] Checking whether adb is present
+2017-11-07 11:11:53:905 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
+2017-11-07 11:11:53:906 - info: [debug] [ADB] Trying to find testAVD emulator
+2017-11-07 11:11:53:907 - info: [debug] [ADB] Getting connected emulators
+2017-11-07 11:11:53:907 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:53:918 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:53:918 - info: [debug] [ADB] 1 emulator(s) connected
+2017-11-07 11:11:53:919 - info: [debug] [ADB] Sending telnet command to device: avd name
+2017-11-07 11:11:53:919 - info: [debug] [ADB] Getting running emulator port
+2017-11-07 11:11:53:922 - info: [debug] [ADB] Socket connection to device created
+2017-11-07 11:11:53:923 - info: [debug] [ADB] Socket connection to device ready
+2017-11-07 11:11:53:923 - info: [debug] [ADB] Telnet command got response: testAVD
+2017-11-07 11:11:53:925 - info: [debug] [ADB] Found emulator testAVD in port 5554
+2017-11-07 11:11:53:925 - info: [debug] [ADB] Setting device id to emulator-5554
+2017-11-07 11:11:53:925 - info: [debug] [AndroidDriver] Not launching AVD because it is already running.
+2017-11-07 11:11:53:925 - info: [AndroidDriver] Using device: emulator-5554
+2017-11-07 11:11:53:926 - info: [ADB] Checking whether adb is present
+2017-11-07 11:11:53:926 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
+2017-11-07 11:11:53:926 - info: [debug] [ADB] Setting device id to emulator-5554
+2017-11-07 11:11:53:927 - info: [AndroidDriver] App file was not listed, instead we're going to run com.quikr directly on the device
+2017-11-07 11:11:53:927 - info: [debug] [AndroidDriver] Checking whether package is present on the device
+2017-11-07 11:11:53:927 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:53:936 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:53:938 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","list","packages","com.quikr"]
+2017-11-07 11:11:54:110 - info: [AndroidDriver] Starting Android session
+2017-11-07 11:11:54:111 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","wait-for-device"]
+2017-11-07 11:11:54:121 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:54:130 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:54:131 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","echo","ping"]
+2017-11-07 11:11:54:146 - info: [debug] [Logcat] Starting logcat capture
+2017-11-07 11:11:54:160 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2017-11-07 11:11:54:161 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+2017-11-07 11:11:54:401 - info: [ADB] Getting device platform version
+2017-11-07 11:11:54:401 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:54:411 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:54:412 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.release"]
+2017-11-07 11:11:54:426 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2017-11-07 11:11:54:427 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:54:436 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:54:437 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","wm","size"]
+2017-11-07 11:11:54:806 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:54:818 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:54:818 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.model"]
+2017-11-07 11:11:54:834 - info: [debug] [ADB] Current device property 'ro.product.model': Android SDK built for x86
+2017-11-07 11:11:54:835 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:54:844 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:54:844 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.manufacturer"]
+2017-11-07 11:11:54:858 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': unknown
+2017-11-07 11:11:54:859 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2017-11-07 11:11:54:859 - info: [debug] [AndroidDriver] No app capability. Assuming it is already on the device
+2017-11-07 11:11:54:859 - info: [debug] [AndroidDriver] Running fast reset (stop and clear)
+2017-11-07 11:11:54:860 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:54:869 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:54:870 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","com.quikr"]
+2017-11-07 11:11:55:311 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:55:322 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:55:323 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","clear","com.quikr"]
+2017-11-07 11:11:55:550 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2017-11-07 11:11:55:552 - info: [debug] [ADB] Forwarding system: 4724 to device: 4724
+2017-11-07 11:11:55:552 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","forward","tcp:4724","tcp:4724"]
+2017-11-07 11:11:55:556 - info: [debug] [UiAutomator] Starting UiAutomator
+2017-11-07 11:11:55:556 - info: [debug] [UiAutomator] Moving to state 'starting'
+2017-11-07 11:11:55:557 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2017-11-07 11:11:55:557 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2017-11-07 11:11:55:557 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+2017-11-07 11:11:55:578 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2017-11-07 11:11:55:578 - info: [debug] [ADB] Getting all processes with uiautomator
+2017-11-07 11:11:55:579 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:55:590 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:55:591 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+2017-11-07 11:11:55:619 - info: [ADB] No uiautomator process found to kill, continuing...
+2017-11-07 11:11:55:619 - info: [debug] [UiAutomator] Starting UIAutomator
+2017-11-07 11:11:55:619 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.quikr","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2017-11-07 11:11:55:816 - info: [debug] [UiAutomator] Moving to state 'online'
+2017-11-07 11:11:55:818 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2017-11-07 11:11:55:819 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:55:822 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+2017-11-07 11:11:55:823 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2017-11-07 11:11:55:824 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2017-11-07 11:11:55:831 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:55:831 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","window"]
+2017-11-07 11:11:55:848 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2017-11-07 11:11:55:850 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:55:859 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:55:859 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.sdk"]
+2017-11-07 11:11:55:873 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2017-11-07 11:11:55:874 - info: [debug] [ADB] Device API level: 23
+2017-11-07 11:11:55:874 - info: [debug] [ADB] Getting connected devices...
+2017-11-07 11:11:55:882 - info: [debug] [ADB] 1 device(s) connected
+2017-11-07 11:11:55:883 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","start","-W","-n","com.quikr/com.quikr.old.SplashActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2017-11-07 11:11:57:361 - info: [Appium] New AndroidDriver session created successfully, session b0411033-e31d-42bf-9bc6-0ec2869ae95e added to master session list
+2017-11-07 11:11:57:362 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1510053117362 (16:41:57 GMT+0530 (IST))
+2017-11-07 11:11:57:363 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"emulator-5554","avd":"testAVD","avdReadyTimeout":120000,"deviceUDID":"emulator-5554","deviceScreenSize":"320x480","deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown"}
+2017-11-07 11:11:57:364 - info: [HTTP] <-- POST /wd/hub/session 200 3560 ms - 888 
+2017-11-07 11:11:57:412 - info: [HTTP] --> GET /wd/hub/session/b0411033-e31d-42bf-9bc6-0ec2869ae95e {}
+2017-11-07 11:11:57:415 - info: [debug] [MJSONWP] Calling AppiumDriver.getSession() with args: ["b0411033-e31d-42bf-9bc6-0ec2869ae95e"]
+2017-11-07 11:11:57:419 - info: [debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"emulator-5554","avd":"testAVD","avdReadyTimeout":120000,"deviceUDID":"emulator-5554","deviceScreenSize":"320x480","deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown"}
+2017-11-07 11:11:57:420 - info: [HTTP] <-- GET /wd/hub/session/b0411033-e31d-42bf-9bc6-0ec2869ae95e 200 8 ms - 888 
+2017-11-07 11:11:57:426 - info: [HTTP] --> GET /wd/hub/session/b0411033-e31d-42bf-9bc6-0ec2869ae95e {}
+2017-11-07 11:11:57:427 - info: [debug] [MJSONWP] Calling AppiumDriver.getSession() with args: ["b0411033-e31d-42bf-9bc6-0ec2869ae95e"]
+2017-11-07 11:11:57:428 - info: [debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","avd":"testAVD","avdReadyTimeout":120000},"appPackage":"com.quikr","appActivity":"com.quikr.old.SplashActivity","appium-version":"1.7.1","newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"emulator-5554","avd":"testAVD","avdReadyTimeout":120000,"deviceUDID":"emulator-5554","deviceScreenSize":"320x480","deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown"}
+2017-11-07 11:11:57:429 - info: [HTTP] <-- GET /wd/hub/session/b0411033-e31d-42bf-9bc6-0ec2869ae95e 200 2 ms - 888 
+2017-11-07 11:11:57:451 - info: [HTTP] --> POST /wd/hub/session/b0411033-e31d-42bf-9bc6-0ec2869ae95e/timeouts {"type":"implicit","ms":10000}
+2017-11-07 11:11:57:451 - info: [debug] [MJSONWP] Calling AppiumDriver.timeouts() with args: ["implicit",10000,"b0411033-e31d-42bf-9bc6-0ec2869ae95e"]
+2017-11-07 11:11:57:452 - info: [debug] [BaseDriver] Set implicit wait to 10000ms
+2017-11-07 11:11:57:453 - info: [debug] [MJSONWP] Responding to client with driver.timeouts() result: null
+2017-11-07 11:11:57:454 - info: [HTTP] <-- POST /wd/hub/session/b0411033-e31d-42bf-9bc6-0ec2869ae95e/timeouts 200 3 ms - 76 
+2017-11-07 11:11:57:457 - info: [Appium] Received SIGTERM - shutting down
