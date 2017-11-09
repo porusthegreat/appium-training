@@ -49,5 +49,6 @@ public class DriverFactory {
 
     public void destroyAppiumDriver(){
         driver.quit();
+        driver = null;
     }
 }

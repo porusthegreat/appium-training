@@ -1,684 +1,142 @@
-2017-11-08 12:24:42:820 - info: [Appium] Welcome to Appium v1.7.1
-2017-11-08 12:24:42:822 - info: [Appium] Non-default server args:
-2017-11-08 12:24:42:822 - info: [Appium]   sessionOverride: true
-2017-11-08 12:24:42:822 - info: [Appium]   log: /Users/purushothamreddy/Documents/training/appium/build/appium.log
-2017-11-08 12:24:42:854 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
-2017-11-08 12:24:44:206 - info: [HTTP] --> GET /wd/hub/status {}
-2017-11-08 12:24:44:208 - info: [debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
-2017-11-08 12:24:44:216 - info: [debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.1","revision":null}}
-2017-11-08 12:24:44:220 - info: [HTTP] <-- GET /wd/hub/status 200 12 ms - 83 
-2017-11-08 12:24:49:764 - info: [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"requiredCapabilities":{},"capabilities":{"desiredCapabilities":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}}
-2017-11-08 12:24:49:764 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},{},{"desiredCapabilities":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}]
-2017-11-08 12:24:49:766 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1510143889765 (17:54:49 GMT+0530 (IST))
-2017-11-08 12:24:49:768 - info: [Appium] Creating new AndroidDriver (v1.28.1) session
-2017-11-08 12:24:49:768 - info: [Appium] Capabilities:
-2017-11-08 12:24:49:770 - info: [Appium]   app: 'app/Paytm_net.one97.paytm.apk'
-2017-11-08 12:24:49:770 - info: [Appium]   appium-version: '1.7.1'
-2017-11-08 12:24:49:770 - info: [Appium]   clearSystemFiles: true
-2017-11-08 12:24:49:770 - info: [Appium]   newCommandTimeout: 120
-2017-11-08 12:24:49:770 - info: [Appium]   platformVersion: '6.0'
-2017-11-08 12:24:49:770 - info: [Appium]   platformName: 'Android'
-2017-11-08 12:24:49:770 - info: [Appium]   deviceName: 'Google Nexus 5x'
-2017-11-08 12:24:49:770 - info: [Appium]   autoAcceptAlerts: true
-2017-11-08 12:24:49:777 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: appium-version, autoAcceptAlerts.
-2017-11-08 12:24:49:777 - info: [BaseDriver] Session created with session id: f4e03555-f3ca-41e2-9f28-87001d9b95e8
-2017-11-08 12:24:49:778 - info: [debug] [AndroidDriver] Getting Java version
-2017-11-08 12:24:49:871 - info: [AndroidDriver] Java version is: 1.8.0_151
-2017-11-08 12:24:49:873 - info: [ADB] Checking whether adb is present
-2017-11-08 12:24:49:875 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
-2017-11-08 12:24:49:875 - info: [AndroidDriver] Retrieving device list
-2017-11-08 12:24:49:876 - info: [debug] [ADB] Trying to find a connected android device
-2017-11-08 12:24:49:876 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:49:893 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:49:893 - info: [AndroidDriver] Looking for a device with Android '6.0'
-2017-11-08 12:24:49:893 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
-2017-11-08 12:24:49:894 - info: [ADB] Getting device platform version
-2017-11-08 12:24:49:894 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:49:904 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:49:906 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.release"]
-2017-11-08 12:24:49:922 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
-2017-11-08 12:24:49:922 - info: [AndroidDriver] Using device: 192.168.56.101:5555
-2017-11-08 12:24:49:923 - info: [ADB] Checking whether adb is present
-2017-11-08 12:24:49:924 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
-2017-11-08 12:24:49:924 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
-2017-11-08 12:24:49:924 - info: [BaseDriver] Using local app 'app/Paytm_net.one97.paytm.apk'
-2017-11-08 12:24:49:925 - info: [debug] [AndroidDriver] Checking whether app is actually present
-2017-11-08 12:24:49:925 - info: [AndroidDriver] Starting Android session
-2017-11-08 12:24:49:926 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","wait-for-device"]
-2017-11-08 12:24:49:936 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:49:945 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:49:945 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","echo","ping"]
-2017-11-08 12:24:49:960 - info: [debug] [Logcat] Starting logcat capture
-2017-11-08 12:24:49:984 - info: [debug] [AndroidDriver] Pushing settings apk to device...
-2017-11-08 12:24:49:985 - info: [debug] [ADB] Uninstalling and re-installing 'io.appium.settings'
-2017-11-08 12:24:49:985 - info: [debug] [ADB] Uninstalling io.appium.settings
-2017-11-08 12:24:49:986 - info: [debug] [ADB] Getting install status for io.appium.settings
-2017-11-08 12:24:49:986 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:50:005 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:50:006 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","io.appium.settings"]
-2017-11-08 12:24:50:229 - info: [debug] [ADB] App is installed
-2017-11-08 12:24:50:229 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:50:242 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:50:243 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","io.appium.settings"]
-2017-11-08 12:24:50:617 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","uninstall","io.appium.settings"]
-2017-11-08 12:24:50:814 - info: [debug] [ADB] ADB command output: Success
-2017-11-08 12:24:50:815 - info: [ADB] io.appium.settings was successfully uninstalled
-2017-11-08 12:24:50:815 - info: [debug] [ADB] Getting install status for io.appium.settings
-2017-11-08 12:24:50:815 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:50:834 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:50:835 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","io.appium.settings"]
-2017-11-08 12:24:51:143 - info: [debug] [ADB] App is not installed
-2017-11-08 12:24:51:143 - info: [debug] [ADB] App '/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/app/build/outputs/apk/settings_apk-debug.apk' not installed. Installing
-2017-11-08 12:24:51:143 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/app/build/outputs/apk/settings_apk-debug.apk"]
-2017-11-08 12:24:51:400 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:51:411 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:51:412 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.sdk"]
-2017-11-08 12:24:51:445 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
-2017-11-08 12:24:51:446 - info: [debug] [ADB] Device API level: 23
-2017-11-08 12:24:51:447 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:51:459 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:51:460 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","dumpsys","package","io.appium.settings"]
-2017-11-08 12:24:51:498 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:51:510 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:51:510 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","dump","io.appium.settings"]
-2017-11-08 12:24:51:919 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.CHANGE_NETWORK_STATE,;,pm,grant,io.appium.settings,android.permission.READ_PHONE_STATE,;,pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;,pm,grant,io.appium.settings,android.permission.SET_ANIMATION_SCALE,;
-2017-11-08 12:24:51:919 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:51:928 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:51:928 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","grant","io.appium.settings","android.permission.CHANGE_NETWORK_STATE",";","pm","grant","io.appium.settings","android.permission.READ_PHONE_STATE",";","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";","pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";"]
-2017-11-08 12:24:53:010 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:53:022 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:53:023 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps"]
-2017-11-08 12:24:53:055 - info: [debug] [ADB] Device API level: 23
-2017-11-08 12:24:53:055 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:53:066 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:53:067 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
-2017-11-08 12:24:54:187 - info: [debug] [ADB] Device API level: 23
-2017-11-08 12:24:54:188 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:54:220 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:54:221 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","appops","set","io.appium.settings","android:mock_location","allow"]
-2017-11-08 12:24:54:688 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
-2017-11-08 12:24:54:688 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
-2017-11-08 12:24:54:976 - info: [ADB] Getting device platform version
-2017-11-08 12:24:54:976 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:54:987 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:54:987 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.release"]
-2017-11-08 12:24:55:007 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
-2017-11-08 12:24:55:007 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:55:027 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:55:027 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","wm","size"]
-2017-11-08 12:24:55:416 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:55:428 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:55:428 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.product.model"]
-2017-11-08 12:24:55:444 - info: [debug] [ADB] Current device property 'ro.product.model': Google Nexus 5X - 6.0.0 - API 23 - 1080x1920
-2017-11-08 12:24:55:445 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:55:454 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:55:454 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.product.manufacturer"]
-2017-11-08 12:24:55:469 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
-2017-11-08 12:24:55:470 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
-2017-11-08 12:24:55:471 - info: [ADB] Checking whether aapt is present
-2017-11-08 12:24:55:472 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/26.0.2/aapt
-2017-11-08 12:24:55:472 - info: [ADB] Extracting package and launch activity from manifest
-2017-11-08 12:24:55:529 - info: [debug] [ADB] badging package: net.one97.paytm
-2017-11-08 12:24:55:530 - info: [debug] [ADB] badging act: net.one97.paytm.AJRJarvisSplash
-2017-11-08 12:24:55:530 - info: [debug] [AndroidDriver] Parsed package and activity are: net.one97.paytm/net.one97.paytm.AJRJarvisSplash
-2017-11-08 12:24:55:644 - info: [AndroidDriver] Remote apk path is /data/local/tmp/8fecf34a352ff9892fae355c48635d71.apk
-2017-11-08 12:24:55:645 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:55:665 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:55:665 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ls","/data/local/tmp/8fecf34a352ff9892fae355c48635d71.apk"]
-2017-11-08 12:24:55:688 - info: [debug] [AndroidDriver] Checking if app is installed
-2017-11-08 12:24:55:689 - info: [debug] [ADB] Getting install status for net.one97.paytm
-2017-11-08 12:24:55:689 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:55:704 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:55:704 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","net.one97.paytm"]
-2017-11-08 12:24:55:877 - info: [debug] [ADB] App is installed
-2017-11-08 12:24:55:878 - info: [AndroidDriver] Apk is already on remote and installed, resetting
-2017-11-08 12:24:55:879 - info: [debug] [AndroidDriver] Running fast reset (stop and clear)
-2017-11-08 12:24:55:880 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:55:892 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:55:893 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","net.one97.paytm"]
-2017-11-08 12:24:56:270 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:56:280 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:56:280 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","clear","net.one97.paytm"]
-2017-11-08 12:24:56:472 - info: [debug] [AndroidDriver] Extracting strings from apk app/Paytm_net.one97.paytm.apk null /var/folders/0n/bjysv4j96g5dy4kvf75yw1c80000gn/T/net.one97.paytm
-2017-11-08 12:24:56:472 - info: [debug] [ADB] Extracting strings for language: default
-2017-11-08 12:24:56:473 - info: [debug] [ADB] Device API level: 23
-2017-11-08 12:24:56:473 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:56:488 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:56:489 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","persist.sys.locale"]
-2017-11-08 12:24:56:513 - info: [debug] [ADB] Current device property 'persist.sys.locale': 
-2017-11-08 12:24:56:514 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:24:56:526 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:24:56:526 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.product.locale"]
-2017-11-08 12:24:56:546 - info: [debug] [ADB] Current device property 'ro.product.locale': en-US
-2017-11-08 12:24:58:417 - info: [debug] [ADB] No strings.xml for language 'en', getting default strings.xml
-2017-11-08 12:25:00:164 - info: [debug] [ADB] Reading strings from converted strings.json
-2017-11-08 12:25:00:181 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","push","/var/folders/0n/bjysv4j96g5dy4kvf75yw1c80000gn/T/net.one97.paytm/strings.json","/data/local/tmp"]
-2017-11-08 12:25:00:249 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
-2017-11-08 12:25:00:250 - info: [debug] [ADB] Forwarding system: 4724 to device: 4724
-2017-11-08 12:25:00:250 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","forward","tcp:4724","tcp:4724"]
-2017-11-08 12:25:00:253 - info: [debug] [UiAutomator] Starting UiAutomator
-2017-11-08 12:25:00:254 - info: [debug] [UiAutomator] Moving to state 'starting'
-2017-11-08 12:25:00:254 - info: [debug] [UiAutomator] Parsing uiautomator jar
-2017-11-08 12:25:00:254 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
-2017-11-08 12:25:00:254 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
-2017-11-08 12:25:00:286 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2017-11-08 12:25:00:286 - info: [debug] [ADB] Getting all processes with uiautomator
-2017-11-08 12:25:00:287 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:00:299 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:00:299 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps"]
-2017-11-08 12:25:00:326 - info: [ADB] No uiautomator process found to kill, continuing...
-2017-11-08 12:25:00:326 - info: [debug] [UiAutomator] Starting UIAutomator
-2017-11-08 12:25:00:326 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","192.168.56.101:5555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","net.one97.paytm","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
-2017-11-08 12:25:00:535 - info: [debug] [UiAutomator] Moving to state 'online'
-2017-11-08 12:25:00:539 - info: [AndroidBootstrap] Android bootstrap socket is now connected
-2017-11-08 12:25:00:540 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:00:545 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
-2017-11-08 12:25:00:545 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
-2017-11-08 12:25:00:545 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
-2017-11-08 12:25:00:552 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:00:552 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","dumpsys","window"]
-2017-11-08 12:25:00:573 - info: [AndroidDriver] Screen already unlocked, doing nothing
-2017-11-08 12:25:00:574 - info: [debug] [ADB] Device API level: 23
-2017-11-08 12:25:00:574 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:00:583 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:00:584 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","start","-W","-n","net.one97.paytm/net.one97.paytm.AJRJarvisSplash","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
-2017-11-08 12:25:03:333 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'net.one97.paytm' and activity: 'net.one97.paytm.AJRJarvisSplash' to be focused
-2017-11-08 12:25:03:334 - info: [debug] [ADB] Possible activities, to be checked: 'net.one97.paytm.AJRJarvisSplash'
-2017-11-08 12:25:03:335 - info: [debug] [ADB] Getting focused package and activity
-2017-11-08 12:25:03:335 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:03:352 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:03:352 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","dumpsys","window","windows"]
-2017-11-08 12:25:03:421 - info: [debug] [ADB] Found package: 'net.one97.paytm' and fully qualified activity name : 'net.one97.paytm.AJRJarvisSplash'
-2017-11-08 12:25:03:423 - info: [Appium] New AndroidDriver session created successfully, session f4e03555-f3ca-41e2-9f28-87001d9b95e8 added to master session list
-2017-11-08 12:25:03:424 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1510143903424 (17:55:03 GMT+0530 (IST))
-2017-11-08 12:25:03:425 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"192.168.56.101:5555","autoAcceptAlerts":true,"deviceUDID":"192.168.56.101:5555","deviceScreenSize":"1080x1920","deviceModel":"Google Nexus 5X - 6.0.0 - API 23 - 1080x1920","deviceManufacturer":"Genymotion","appPackage":"net.one97.paytm","appWaitPackage":"net.one97.paytm","appActivity":"net.one97.paytm.AJRJarvisSplash","appWaitActivity":"net.one97.paytm.AJRJarvisSplash"}
-2017-11-08 12:25:03:427 - info: [HTTP] <-- POST /wd/hub/session 200 13663 ms - 1040 
-2017-11-08 12:25:03:503 - info: [HTTP] --> GET /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8 {}
-2017-11-08 12:25:03:504 - info: [debug] [MJSONWP] Calling AppiumDriver.getSession() with args: ["f4e03555-f3ca-41e2-9f28-87001d9b95e8"]
-2017-11-08 12:25:03:508 - info: [debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"192.168.56.101:5555","autoAcceptAlerts":true,"deviceUDID":"192.168.56.101:5555","deviceScreenSize":"1080x1920","deviceModel":"Google Nexus 5X - 6.0.0 - API 23 - 1080x1920","deviceManufacturer":"Genymotion","appPackage":"net.one97.paytm","appWaitPackage":"net.one97.paytm","appActivity":"net.one97.paytm.AJRJarvisSplash","appWaitActivity":"net.one97.paytm.AJRJarvisSplash"}
-2017-11-08 12:25:03:509 - info: [HTTP] <-- GET /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8 200 5 ms - 1040 
-2017-11-08 12:25:03:515 - info: [HTTP] --> GET /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8 {}
-2017-11-08 12:25:03:515 - info: [debug] [MJSONWP] Calling AppiumDriver.getSession() with args: ["f4e03555-f3ca-41e2-9f28-87001d9b95e8"]
-2017-11-08 12:25:03:516 - info: [debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"192.168.56.101:5555","autoAcceptAlerts":true,"deviceUDID":"192.168.56.101:5555","deviceScreenSize":"1080x1920","deviceModel":"Google Nexus 5X - 6.0.0 - API 23 - 1080x1920","deviceManufacturer":"Genymotion","appPackage":"net.one97.paytm","appWaitPackage":"net.one97.paytm","appActivity":"net.one97.paytm.AJRJarvisSplash","appWaitActivity":"net.one97.paytm.AJRJarvisSplash"}
-2017-11-08 12:25:03:516 - info: [HTTP] <-- GET /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8 200 1 ms - 1040 
-2017-11-08 12:25:03:524 - info: [HTTP] --> POST /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8/timeouts {"type":"implicit","ms":10000}
-2017-11-08 12:25:03:524 - info: [debug] [MJSONWP] Calling AppiumDriver.timeouts() with args: ["implicit",10000,"f4e03555-f3ca-41e2-9f28-87001d9b95e8"]
-2017-11-08 12:25:03:525 - info: [debug] [BaseDriver] Set implicit wait to 10000ms
-2017-11-08 12:25:03:526 - info: [debug] [MJSONWP] Responding to client with driver.timeouts() result: null
-2017-11-08 12:25:03:526 - info: [HTTP] <-- POST /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8/timeouts 200 2 ms - 76 
-2017-11-08 12:25:03:562 - info: [HTTP] --> POST /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8/element {"using":"id","value":"screen_title"}
-2017-11-08 12:25:03:563 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","screen_title","f4e03555-f3ca-41e2-9f28-87001d9b95e8"]
-2017-11-08 12:25:03:563 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2017-11-08 12:25:03:564 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2017-11-08 12:25:03:564 - info: [debug] [BaseDriver] Waiting up to 10000 ms for condition
-2017-11-08 12:25:03:569 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:03:584 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:03:584 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:03:586 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:03:586 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:03:586 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:03:595 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:03:601 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:03:616 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:03:618 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:03:619 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:03:619 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:03:633 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:03:634 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:03:636 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:03:639 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:03:639 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:03:640 - info: [debug] [BaseDriver] Waited for 75 ms so far
-2017-11-08 12:25:04:143 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:04:144 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:04:144 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:04:144 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:04:145 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:04:145 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:10:313 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:10:550 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:10:569 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:10:644 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:10:645 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:10:645 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:10:762 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:11:577 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:12:331 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:12:835 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:12:837 - info: [debug] [BaseDriver] Waited for 9272 ms so far
-2017-11-08 12:25:12:838 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:13:342 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:13:345 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:13:345 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:13:345 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:13:345 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:13:347 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:13:396 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:13:399 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:13:405 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:13:408 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:13:408 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:13:408 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:13:409 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:13:413 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:13:416 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:13:443 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:13:444 - info: [debug] [BaseDriver] Waited for 9879 ms so far
-2017-11-08 12:25:13:445 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:13:946 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:13:950 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:13:950 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:13:950 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:13:951 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:13:951 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:13:952 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:13:954 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:13:964 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:13:987 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:13:987 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:13:987 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:13:993 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:14:007 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:14:033 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:14:037 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:14:038 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:14:042 - info: [HTTP] <-- POST /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8/element 500 10480 ms - 164 
-2017-11-08 12:25:14:070 - info: [HTTP] --> POST /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8/element {"using":"id","value":"screen_title"}
-2017-11-08 12:25:14:070 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","screen_title","f4e03555-f3ca-41e2-9f28-87001d9b95e8"]
-2017-11-08 12:25:14:070 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2017-11-08 12:25:14:070 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2017-11-08 12:25:14:070 - info: [debug] [BaseDriver] Waiting up to 10000 ms for condition
-2017-11-08 12:25:14:071 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:14:073 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:14:073 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:14:073 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:14:073 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:14:073 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:14:116 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:14:146 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:14:159 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:14:169 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:14:169 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:14:170 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:14:182 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:14:184 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:14:202 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:14:204 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:14:205 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:14:205 - info: [debug] [BaseDriver] Waited for 134 ms so far
-2017-11-08 12:25:14:710 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:14:713 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:14:715 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:14:715 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:14:716 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:14:716 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:14:721 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:14:725 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:14:732 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:14:736 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:14:737 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:14:737 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:14:745 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:14:765 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:14:770 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:14:775 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:14:776 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:14:776 - info: [debug] [BaseDriver] Waited for 705 ms so far
-2017-11-08 12:25:15:281 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:15:283 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:15:283 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:15:284 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:15:285 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:15:285 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:15:291 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:15:296 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:15:302 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:15:306 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:15:306 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:15:307 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:15:311 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:15:317 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:15:322 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:15:329 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:15:330 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:15:330 - info: [debug] [BaseDriver] Waited for 1259 ms so far
-2017-11-08 12:25:15:835 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:15:837 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:15:837 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:15:838 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:15:838 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:15:838 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:15:843 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:15:857 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:15:863 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:15:867 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:15:868 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:15:868 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:15:872 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:15:876 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:15:884 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:15:889 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:15:890 - info: [debug] [BaseDriver] Waited for 1819 ms so far
-2017-11-08 12:25:15:890 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:16:395 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:16:398 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:16:400 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:16:400 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:16:401 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:16:401 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:16:408 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:16:413 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:16:423 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:16:429 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:16:431 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:16:431 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:16:435 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:16:441 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:16:447 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:16:463 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:16:463 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:16:463 - info: [debug] [BaseDriver] Waited for 2392 ms so far
-2017-11-08 12:25:16:967 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:16:969 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:16:969 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:16:970 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:16:970 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:16:972 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:16:977 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:16:983 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:16:987 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:16:998 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:16:999 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:16:999 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:17:003 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:17:009 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:17:015 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:17:019 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:17:020 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:17:020 - info: [debug] [BaseDriver] Waited for 2949 ms so far
-2017-11-08 12:25:17:524 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:17:526 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:17:526 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:17:527 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:17:527 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:17:528 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:17:535 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:17:541 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:17:546 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:17:560 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:17:560 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:17:561 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:17:567 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:17:571 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:17:577 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:17:581 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:17:582 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:17:582 - info: [debug] [BaseDriver] Waited for 3511 ms so far
-2017-11-08 12:25:18:084 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:18:086 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:18:086 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:18:087 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:18:087 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:18:087 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:18:092 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:18:100 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:18:103 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:18:109 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:18:109 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:18:110 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:18:117 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:18:122 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:18:129 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:18:135 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:18:136 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:18:136 - info: [debug] [BaseDriver] Waited for 4065 ms so far
-2017-11-08 12:25:18:638 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:18:640 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:18:640 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:18:640 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:18:640 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:18:641 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:18:646 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:18:660 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:18:665 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:18:672 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:18:672 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:18:673 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:18:678 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:18:683 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:18:688 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:18:695 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:18:696 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:18:696 - info: [debug] [BaseDriver] Waited for 4625 ms so far
-2017-11-08 12:25:19:197 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:19:199 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:19:199 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:19:199 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:19:200 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:19:200 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:19:204 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:19:210 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:19:214 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:19:220 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:19:221 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:19:221 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:19:226 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:19:231 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:19:241 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:19:257 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:19:258 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:19:258 - info: [debug] [BaseDriver] Waited for 5187 ms so far
-2017-11-08 12:25:19:760 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:19:763 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:19:763 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:19:764 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:19:764 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:19:764 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:19:768 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:19:774 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:19:779 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:19:786 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:19:786 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:19:787 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:19:792 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:19:796 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:19:801 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:19:806 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:19:807 - info: [debug] [BaseDriver] Waited for 5736 ms so far
-2017-11-08 12:25:19:807 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:20:308 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:20:309 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:20:310 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:20:310 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:20:310 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:20:310 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:20:315 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:20:320 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:20:325 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:20:330 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:20:330 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:20:330 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:20:335 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:20:340 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:20:346 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:20:363 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:20:364 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:20:364 - info: [debug] [BaseDriver] Waited for 6293 ms so far
-2017-11-08 12:25:20:866 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:20:868 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:20:869 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:20:869 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:20:869 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:20:869 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:20:874 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:20:881 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:20:888 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:20:893 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:20:894 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:20:894 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:20:898 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:20:903 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:20:908 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:20:915 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:20:916 - info: [debug] [BaseDriver] Waited for 6845 ms so far
-2017-11-08 12:25:20:916 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:21:417 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:21:418 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:21:419 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:21:419 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:21:419 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:21:419 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:21:424 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:21:429 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:21:433 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:21:439 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:21:440 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:21:440 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:21:449 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:21:453 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:21:458 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:21:468 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:21:468 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:21:468 - info: [debug] [BaseDriver] Waited for 7397 ms so far
-2017-11-08 12:25:21:970 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:21:972 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:21:973 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:21:973 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:21:973 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:21:974 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:21:982 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:21:994 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:22:002 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:22:007 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:22:008 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:22:008 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:22:013 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:22:018 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:22:022 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:22:028 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:22:028 - info: [debug] [BaseDriver] Waited for 7957 ms so far
-2017-11-08 12:25:22:029 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:22:531 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:22:532 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:22:533 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:22:533 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:22:533 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:22:533 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:22:538 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:22:542 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:22:556 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:22:561 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:22:561 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:22:562 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:22:566 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:22:571 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:22:576 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:22:581 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:22:582 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:22:582 - info: [debug] [BaseDriver] Waited for 8511 ms so far
-2017-11-08 12:25:23:087 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:23:089 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:23:090 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:23:090 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:23:090 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:23:090 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:23:095 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:23:101 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:23:107 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:23:116 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:23:116 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:23:117 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:23:122 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:23:127 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:23:132 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:23:138 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:23:138 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:23:139 - info: [debug] [BaseDriver] Waited for 9067 ms so far
-2017-11-08 12:25:23:640 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:23:642 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:23:643 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:23:643 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:23:643 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:23:646 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:23:649 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:23:654 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:23:661 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:23:665 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:23:666 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:23:666 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:23:671 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:23:676 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:23:680 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:23:686 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:23:686 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:23:686 - info: [debug] [BaseDriver] Waited for 9615 ms so far
-2017-11-08 12:25:24:191 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:24:194 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"screen_title","context":"","multiple":false}}
-2017-11-08 12:25:24:194 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2017-11-08 12:25:24:194 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2017-11-08 12:25:24:194 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:24:195 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:24:199 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:24:204 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:24:210 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:24:215 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-2017-11-08 12:25:24:215 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'screen_title' using 'ID' with the contextId: '' multiple: false
-2017-11-08 12:25:24:216 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=net.one97.paytm:id/screen_title]
-2017-11-08 12:25:24:220 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/screen_title]
-2017-11-08 12:25:24:225 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=screen_title]
-2017-11-08 12:25:24:229 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=screen_title, INSTANCE=0]
-2017-11-08 12:25:24:239 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
-2017-11-08 12:25:24:240 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:24:241 - info: [HTTP] <-- POST /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8/element 500 10171 ms - 164 
-2017-11-08 12:25:24:263 - info: [HTTP] --> DELETE /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8 {}
-2017-11-08 12:25:24:264 - info: [debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["f4e03555-f3ca-41e2-9f28-87001d9b95e8"]
-2017-11-08 12:25:24:264 - info: [debug] [BaseDriver] Event 'quitSessionRequested' logged at 1510143924264 (17:55:24 GMT+0530 (IST))
-2017-11-08 12:25:24:265 - info: [Appium] Removing session f4e03555-f3ca-41e2-9f28-87001d9b95e8 from our master session list
-2017-11-08 12:25:24:268 - info: [debug] [AndroidDriver] Shutting down Android driver
-2017-11-08 12:25:24:269 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:24:292 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:24:292 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","net.one97.paytm"]
-2017-11-08 12:25:24:719 - info: [debug] [ADB] Pressing the HOME button
-2017-11-08 12:25:24:720 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:24:736 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:24:736 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","input","keyevent",3]
-2017-11-08 12:25:25:303 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
-2017-11-08 12:25:25:306 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2017-11-08 12:25:25:306 - info: [debug] [UiAutomator] Shutting down UiAutomator
-2017-11-08 12:25:25:307 - info: [debug] [UiAutomator] Moving to state 'stopping'
-2017-11-08 12:25:25:307 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
-2017-11-08 12:25:25:307 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
-2017-11-08 12:25:25:307 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
-2017-11-08 12:25:25:307 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 24.786
-2017-11-08 12:25:25:308 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
-2017-11-08 12:25:25:309 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
-2017-11-08 12:25:25:312 - info: [debug] [UiAutomator] UiAutomator shut down normally
-2017-11-08 12:25:25:315 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2017-11-08 12:25:25:315 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2017-11-08 12:25:25:315 - info: [debug] [ADB] Getting all processes with uiautomator
-2017-11-08 12:25:25:315 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:25:326 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:25:327 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps"]
-2017-11-08 12:25:25:359 - info: [ADB] No uiautomator process found to kill, continuing...
-2017-11-08 12:25:25:359 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2017-11-08 12:25:25:359 - info: [debug] [Logcat] Stopping logcat capture
-2017-11-08 12:25:25:364 - info: [debug] [ADB] Getting connected devices...
-2017-11-08 12:25:25:375 - info: [debug] [ADB] 1 device(s) connected
-2017-11-08 12:25:25:376 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","io.appium.unlock"]
-2017-11-08 12:25:25:786 - info: [debug] [AndroidDriver] App was not copied, so not deleting
-2017-11-08 12:25:25:786 - info: [debug] [BaseDriver] Event 'quitSessionFinished' logged at 1510143925786 (17:55:25 GMT+0530 (IST))
-2017-11-08 12:25:25:786 - info: [debug] [MJSONWP] Received response: null
-2017-11-08 12:25:25:786 - info: [debug] [MJSONWP] But deleting session, so not returning
-2017-11-08 12:25:25:786 - info: [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
-2017-11-08 12:25:25:787 - info: [HTTP] <-- DELETE /wd/hub/session/f4e03555-f3ca-41e2-9f28-87001d9b95e8 200 1524 ms - 76 
-2017-11-08 12:25:25:792 - info: [Appium] Received SIGTERM - shutting down
+2017-11-09 11:16:20:579 - info: [Appium] Welcome to Appium v1.7.1
+2017-11-09 11:16:20:582 - info: [Appium] Non-default server args:
+2017-11-09 11:16:20:583 - info: [Appium]   sessionOverride: true
+2017-11-09 11:16:20:583 - info: [Appium]   log: /Users/purushothamreddy/Documents/training/appium/build/appium.log
+2017-11-09 11:16:20:629 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2017-11-09 11:16:21:989 - info: [HTTP] --> GET /wd/hub/status {}
+2017-11-09 11:16:21:993 - info: [debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+2017-11-09 11:16:22:003 - info: [debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.1","revision":null}}
+2017-11-09 11:16:22:011 - info: [HTTP] <-- GET /wd/hub/status 200 17 ms - 83 
+2017-11-09 11:16:27:042 - info: [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"requiredCapabilities":{},"capabilities":{"desiredCapabilities":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}}
+2017-11-09 11:16:27:043 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},{},{"desiredCapabilities":{"app":"app/Paytm_net.one97.paytm.apk","appium-version":"1.7.1","clearSystemFiles":true,"newCommandTimeout":120,"platformVersion":"6.0","platformName":"Android","deviceName":"Google Nexus 5x","autoAcceptAlerts":true},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}]
+2017-11-09 11:16:27:043 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1510226187043 (16:46:27 GMT+0530 (IST))
+2017-11-09 11:16:27:045 - info: [Appium] Creating new AndroidDriver (v1.28.1) session
+2017-11-09 11:16:27:045 - info: [Appium] Capabilities:
+2017-11-09 11:16:27:046 - info: [Appium]   app: 'app/Paytm_net.one97.paytm.apk'
+2017-11-09 11:16:27:047 - info: [Appium]   appium-version: '1.7.1'
+2017-11-09 11:16:27:047 - info: [Appium]   clearSystemFiles: true
+2017-11-09 11:16:27:047 - info: [Appium]   newCommandTimeout: 120
+2017-11-09 11:16:27:047 - info: [Appium]   platformVersion: '6.0'
+2017-11-09 11:16:27:047 - info: [Appium]   platformName: 'Android'
+2017-11-09 11:16:27:047 - info: [Appium]   deviceName: 'Google Nexus 5x'
+2017-11-09 11:16:27:047 - info: [Appium]   autoAcceptAlerts: true
+2017-11-09 11:16:27:054 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: appium-version, autoAcceptAlerts.
+2017-11-09 11:16:27:055 - info: [BaseDriver] Session created with session id: 9293072e-3878-4b68-8171-09e4b50ecd3d
+2017-11-09 11:16:27:055 - info: [debug] [AndroidDriver] Getting Java version
+2017-11-09 11:16:27:164 - info: [AndroidDriver] Java version is: 1.8.0_151
+2017-11-09 11:16:27:167 - info: [ADB] Checking whether adb is present
+2017-11-09 11:16:27:169 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
+2017-11-09 11:16:27:169 - info: [AndroidDriver] Retrieving device list
+2017-11-09 11:16:27:169 - info: [debug] [ADB] Trying to find a connected android device
+2017-11-09 11:16:27:170 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:27:181 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:27:181 - info: [AndroidDriver] Looking for a device with Android '6.0'
+2017-11-09 11:16:27:181 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2017-11-09 11:16:27:181 - info: [ADB] Getting device platform version
+2017-11-09 11:16:27:182 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:27:193 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:27:195 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.release"]
+2017-11-09 11:16:27:218 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2017-11-09 11:16:27:219 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2017-11-09 11:16:27:221 - info: [ADB] Checking whether adb is present
+2017-11-09 11:16:27:224 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
+2017-11-09 11:16:27:225 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2017-11-09 11:16:27:225 - info: [BaseDriver] Using local app 'app/Paytm_net.one97.paytm.apk'
+2017-11-09 11:16:27:226 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2017-11-09 11:16:27:226 - info: [AndroidDriver] Starting Android session
+2017-11-09 11:16:27:227 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","wait-for-device"]
+2017-11-09 11:16:27:242 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:27:253 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:27:253 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","echo","ping"]
+2017-11-09 11:16:27:275 - info: [debug] [Logcat] Starting logcat capture
+2017-11-09 11:16:27:308 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2017-11-09 11:16:27:310 - info: [debug] [ADB] Uninstalling and re-installing 'io.appium.settings'
+2017-11-09 11:16:27:312 - info: [debug] [ADB] Uninstalling io.appium.settings
+2017-11-09 11:16:27:315 - info: [debug] [ADB] Getting install status for io.appium.settings
+2017-11-09 11:16:27:316 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:27:331 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:27:332 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","io.appium.settings"]
+2017-11-09 11:16:27:562 - info: [debug] [ADB] App is installed
+2017-11-09 11:16:27:562 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:27:575 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:27:575 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","io.appium.settings"]
+2017-11-09 11:16:27:999 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","uninstall","io.appium.settings"]
+2017-11-09 11:16:28:231 - info: [debug] [ADB] ADB command output: Success
+2017-11-09 11:16:28:231 - info: [ADB] io.appium.settings was successfully uninstalled
+2017-11-09 11:16:28:231 - info: [debug] [ADB] Getting install status for io.appium.settings
+2017-11-09 11:16:28:231 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:28:250 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:28:251 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","io.appium.settings"]
+2017-11-09 11:16:28:630 - info: [debug] [ADB] App is not installed
+2017-11-09 11:16:28:630 - info: [debug] [ADB] App '/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/app/build/outputs/apk/settings_apk-debug.apk' not installed. Installing
+2017-11-09 11:16:28:631 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/app/build/outputs/apk/settings_apk-debug.apk"]
+2017-11-09 11:16:28:906 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:28:920 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:28:920 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.sdk"]
+2017-11-09 11:16:28:950 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2017-11-09 11:16:28:950 - info: [debug] [ADB] Device API level: 23
+2017-11-09 11:16:28:952 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:28:968 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:28:968 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","dumpsys","package","io.appium.settings"]
+2017-11-09 11:16:29:006 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:29:026 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:29:026 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","dump","io.appium.settings"]
+2017-11-09 11:16:29:377 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.CHANGE_NETWORK_STATE,;,pm,grant,io.appium.settings,android.permission.READ_PHONE_STATE,;,pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;,pm,grant,io.appium.settings,android.permission.SET_ANIMATION_SCALE,;
+2017-11-09 11:16:29:378 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:29:389 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:29:389 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","grant","io.appium.settings","android.permission.CHANGE_NETWORK_STATE",";","pm","grant","io.appium.settings","android.permission.READ_PHONE_STATE",";","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";","pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";"]
+2017-11-09 11:16:30:529 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:30:540 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:30:541 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps"]
+2017-11-09 11:16:30:564 - info: [debug] [ADB] Device API level: 23
+2017-11-09 11:16:30:564 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:30:576 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:30:577 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2017-11-09 11:16:31:538 - info: [debug] [ADB] Device API level: 23
+2017-11-09 11:16:31:539 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:31:550 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:31:551 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","appops","set","io.appium.settings","android:mock_location","allow"]
+2017-11-09 11:16:31:977 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2017-11-09 11:16:31:977 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+2017-11-09 11:16:32:256 - info: [ADB] Getting device platform version
+2017-11-09 11:16:32:257 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:32:268 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:32:268 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.release"]
+2017-11-09 11:16:32:290 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2017-11-09 11:16:32:291 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:32:317 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:32:318 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","wm","size"]
+2017-11-09 11:16:32:764 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:32:776 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:32:777 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.product.model"]
+2017-11-09 11:16:32:797 - info: [debug] [ADB] Current device property 'ro.product.model': Google Nexus 5X - 6.0.0 - API 23 - 1080x1920
+2017-11-09 11:16:32:798 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:32:816 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:32:816 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.product.manufacturer"]
+2017-11-09 11:16:32:835 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2017-11-09 11:16:32:836 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2017-11-09 11:16:32:836 - info: [ADB] Checking whether aapt is present
+2017-11-09 11:16:32:838 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/26.0.2/aapt
+2017-11-09 11:16:32:838 - info: [ADB] Extracting package and launch activity from manifest
+2017-11-09 11:16:32:896 - info: [debug] [ADB] badging package: net.one97.paytm
+2017-11-09 11:16:32:896 - info: [debug] [ADB] badging act: net.one97.paytm.AJRJarvisSplash
+2017-11-09 11:16:32:896 - info: [debug] [AndroidDriver] Parsed package and activity are: net.one97.paytm/net.one97.paytm.AJRJarvisSplash
+2017-11-09 11:16:33:020 - info: [AndroidDriver] Remote apk path is /data/local/tmp/8fecf34a352ff9892fae355c48635d71.apk
+2017-11-09 11:16:33:021 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:33:032 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:33:032 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ls","/data/local/tmp/8fecf34a352ff9892fae355c48635d71.apk"]
+2017-11-09 11:16:33:048 - info: [debug] [AndroidDriver] Checking if app is installed
+2017-11-09 11:16:33:048 - info: [debug] [ADB] Getting install status for net.one97.paytm
+2017-11-09 11:16:33:048 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:33:058 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:33:058 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","net.one97.paytm"]
+2017-11-09 11:16:33:186 - info: [Appium] Received SIGINT - shutting down
+2017-11-09 11:16:33:189 - error: [Logcat] Logcat terminated with code null, signal SIGINT
+2017-11-09 11:16:33:190 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","net.one97.paytm"]
+2017-11-09 11:16:33:382 - info: [debug] [ADB] App is installed
+2017-11-09 11:16:33:382 - info: [AndroidDriver] Apk is already on remote and installed, resetting
+2017-11-09 11:16:33:383 - info: [debug] [AndroidDriver] Running fast reset (stop and clear)
+2017-11-09 11:16:33:383 - info: [debug] [ADB] Getting connected devices...
+2017-11-09 11:16:33:393 - info: [debug] [ADB] 1 device(s) connected
+2017-11-09 11:16:33:393 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb' with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","net.one97.paytm"]
+2017-11-09 11:16:33:554 - info: [HTTP] <-- POST /wd/hub/session - - ms - - 

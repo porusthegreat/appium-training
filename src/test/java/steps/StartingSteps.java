@@ -16,23 +16,13 @@ public class StartingSteps {
 
     @Before
     public void startAppiumServer() throws IOException {
+        System.out.println("Inside setup method");
         int port = 4723;
-        String nodeJS_path = "C:/PROGRAM FILES/NodeJS/node.exe",
-                appiumJS_path = "C:/PROGRAM FILES/Appium/node_modules/appium/bin/appium.js",
-                osName = System.getProperty("os.name");
+        String osName = System.getProperty("os.name");
         if (osName.contains("Mac")) {
             appiumService = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
                     .usingDriverExecutable(new File(("/usr/local/bin/node")))
                     .withAppiumJS(new File(("/usr/local/bin/appium")))
-                    .withIPAddress("0.0.0.0")
-                    .usingPort(port)
-                    .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-                    .withLogFile(new File("build/appium.log")));
-            appiumService.start();
-        } else if (osName.contains("Windows")) {
-            appiumService = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-                    .usingDriverExecutable(new File(nodeJS_path))
-                    .withAppiumJS(new File(appiumJS_path))
                     .withIPAddress("0.0.0.0")
                     .usingPort(port)
                     .withArgument(GeneralServerFlag.SESSION_OVERRIDE)

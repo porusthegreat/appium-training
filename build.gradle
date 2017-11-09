@@ -33,3 +33,8 @@ dependencies {
     compile group: 'com.jayway.awaitility', name: 'awaitility', version: '1.7.0'
 }
 
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+
+}

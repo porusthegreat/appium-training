@@ -17,6 +17,9 @@ public class Login extends BasePage{
     @FindBy(id = "com.android.packageinstaller:id/permission_allow_button")
     private List<WebElement> allow_permissions;
 
+    @FindBy(xpath = "//android.widget.TextView[@text='Do It Later']")
+    private WebElement doItLater;
+
     public Login(AppiumDriver driver) {
         super(driver);
         this.driver = driver;
@@ -25,11 +28,17 @@ public class Login extends BasePage{
 
     public String verifyLoginScreen() {
         new BasePage(driver).waitForElementDisplay(allow_permissions.get(0));
-        allow_permissions.get(0).click();
-        allow_permissions.get(0).click();
-        allow_permissions.get(0).click();
+        System.out.println("============================size of list is "+allow_permissions.size()+"===========================");
+        while (allow_permissions.iterator().hasNext()){
+            allow_permissions.get(0).click();
+        }
         waitForElementDisplay(loginText);
         return loginText.getText();
+    }
+
+    public void skipLogin(){
+        waitForElementDisplay(doItLater);
+        doItLater.click();
     }
 
 }

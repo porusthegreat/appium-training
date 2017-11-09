@@ -2,6 +2,8 @@ package pages;
 
 import io.appium.java_client.AppiumDriver;
 import org.apache.tools.ant.taskdefs.WaitFor;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,7 +21,13 @@ public class SelectLanguage extends  BasePage{
     private WebElement continueBtn;
 
     public void selectsLanguageAsEnglish() {
+        try {
+        waitForElementDisplay(selectsEnglish);
         selectsEnglish.click();
+        }catch (TimeoutException e){
+            e.printStackTrace();
+        }
+
     }
 
     public SelectLanguage(AppiumDriver driver) {
@@ -29,12 +37,11 @@ public class SelectLanguage extends  BasePage{
     }
 
     public void clickOnContinue() {
-        waitForElementToBeClickable(continueBtn);
-        continueBtn.click();
-    }
-
-    public String getScreenTitle() {
-       waitForElementDisplay(screenTitle);
-        return screenTitle.getText();
+        try {
+            waitForElementToBeClickable(continueBtn);
+            continueBtn.click();
+        }catch (TimeoutException e){
+            e.printStackTrace();
+        }
     }
 }
