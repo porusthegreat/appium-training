@@ -36,5 +36,46 @@ dependencies {
 test {
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
-
 }
+
+/*task getAdbDeviceId (type: RunTests){
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine "adb", "devices", "-l"
+        standardOutput = stdout
+    }
+    println "Output:\n$stdout"
+}
+
+class RunTests extends DefaultTask{
+
+}*/
+
+/*task runAllTest(type: Test, dependsOn: ['clean', 'build']) {
+    doLast {
+        String tags = getTags()
+        *//*def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine "adb", "devices", "-l"
+            standardOutput = stdout
+        }
+        if(stdout.contains("device")){
+            println stdout.split("device")[1].toString();
+        }*//*
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = sourceSets.test.runtimeClasspath
+            args = ["-p", "pretty", "-p",
+                    "json:${reporting.baseDir}/cucumber/cucumber.json",
+                    "--glue", "steps", "-t", tags,
+                    "${project.projectDir}/src/test/java/features"]
+        }
+    }
+}
+
+private String getTags() {
+    def tags = System.getProperty("tags")
+    if (tags != null)
+        return tags
+    return "~wip"
+}*/

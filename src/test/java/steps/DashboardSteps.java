@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import pages.Dashboard;
 
@@ -23,5 +24,17 @@ public class DashboardSteps extends DriverFactory {
         new Dashboard(driver).allowPermissionsOnDashboardScreen();
         new Dashboard(driver).acceptAlerttext();
         new Dashboard(driver).clickOnPostpaidRecharge();
+    }
+
+    @And("user swipes to see broadband")
+    public void user_swipes_to_see_broadband(){
+        new Dashboard(driver).allowPermissionsOnDashboardScreen();
+        new Dashboard(driver).acceptAlerttext();
+        new Dashboard(driver).swipeToBroadband();
+    }
+
+    @And("clicks on broadband")
+    public void clicks_on_broadband(){
+        new Dashboard(driver).clickOnBroadband();
     }
 }

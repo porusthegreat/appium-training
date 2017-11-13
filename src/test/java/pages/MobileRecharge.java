@@ -52,16 +52,11 @@ public class MobileRecharge extends BasePage{
         proceedBtn.click();
     }
 
-    public Boolean checkIfPostpaidIsSelected(){
-        waitForElementToBeClickable(radioPostpaid);
-        System.out.println(radioPostpaid.isSelected());
-        return radioPostpaid.isSelected();
-
+    public Boolean isPrepaidSelected(){
+        return radioPrepaid.isSelected();
     }
 
-    public Boolean checkIfPrepaidIsSelected(){
-        waitForElementToBeClickable(radioPrepaid);
-        System.out.println(radioPrepaid.isSelected());
-        return radioPrepaid.isSelected();
+    public Boolean isPostpaidSelected(){
+        return radioPostpaid.isSelected();
     }
 }

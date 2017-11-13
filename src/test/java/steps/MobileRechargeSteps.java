@@ -11,16 +11,6 @@ public class MobileRechargeSteps extends DriverFactory {
     public MobileRechargeSteps() throws IOException {
     }
 
-    @And("user selects prepaid")
-    public void user_selects_prepaid(){
-        Boolean prepaid = new MobileRecharge(driver).checkIfPrepaidIsSelected();
-    }
-
-    @And("user selects postpaid")
-    public void user_selects_postpaid(){
-        Boolean prepaid = new MobileRecharge(driver).checkIfPostpaidIsSelected();
-    }
-
     @And("^user enters mobile number as ([^\\\"]*)$")
     public void user_enters_mobile_number(String number){
         new MobileRecharge(driver).inputMobileNumber(number);
@@ -40,6 +30,20 @@ public class MobileRechargeSteps extends DriverFactory {
     @And("user clicks on proceed button")
     public void user_clicks_on_proceed_button(){
         new MobileRecharge(driver).clickOnProceedBtn();
+    }
+
+    @And("user verifies whether prepaid option is selected")
+    public void verify_prepaid_is_selected(){
+        Boolean prepaid = new MobileRecharge(driver).isPrepaidSelected();
+        System.out.println("==========prepaid value is ==========="+prepaid);
+//        Assert.assertTrue(prepaid);
+    }
+
+    @And("user verifies whether postpaid option is selected")
+    public void verify_postpaid_is_selected(){
+        Boolean postpaid = new MobileRecharge(driver).isPostpaidSelected();
+        System.out.println("==========prepaid value is ==========="+postpaid);
+//        Assert.assertTrue(postpaid);
     }
 
 }
