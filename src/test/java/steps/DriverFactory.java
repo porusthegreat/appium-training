@@ -20,7 +20,6 @@ public class DriverFactory {
             caps.setCapability("appium-version", "1.7.1");
             caps.setCapability("platformName", "Android");
 //            caps.setCapability("platformVersion", "6.0");
-            caps.setCapability("avd","testAVD");
             caps.setCapability("deviceName", "Google_Nexus_5X");
             caps.setCapability("newCommandTimeout",120);
 
