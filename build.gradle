@@ -33,22 +33,9 @@ dependencies {
     compile group: 'com.jayway.awaitility', name: 'awaitility', version: '1.7.0'
 }
 
-test {
+/*test {
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
-}
-
-/*task getAdbDeviceId (type: RunTests){
-    def stdout = new ByteArrayOutputStream()
-    exec {
-        commandLine "adb", "devices", "-l"
-        standardOutput = stdout
-    }
-    println "Output:\n$stdout"
-}
-
-class RunTests extends DefaultTask{
-
 }*/
 
 task runAllTest(type: Test, dependsOn: ['clean', 'build']) {
