@@ -30,10 +30,10 @@ public class StartingSteps {
                     .withAppiumJS(new File(("/usr/local/bin/appium")))
                     .withIPAddress("0.0.0.0")
                     .usingPort(port)
-                    .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+                    .withArgument(GeneralServerFlag.SESSION_OVERRIDE));
                     /*.withArgument(GeneralServerFlag.ROBOT_ADDRESS, udid)
                     .withArgument(AndroidServerFlag.BOOTSTRAP_PORT_NUMBER,String.valueOf(bp+2))*/
-                    .withLogFile(new File("build/appium.log")));
+//                     .withLogFile(new File("build/appium.log")));
             appiumService.start();
             new DriverFactory().getAppiumDriver();
         }
