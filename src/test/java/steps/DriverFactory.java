@@ -22,6 +22,8 @@ public class DriverFactory {
 //            caps.setCapability("platformVersion", "6.0");
             caps.setCapability("deviceName", "Google_Nexus_5X");
             caps.setCapability("newCommandTimeout",120);
+            caps.setCapability("avd","testAVD");
+            caps.setCapability("avdReadyTimeout",120000);
 
             //Launch virtual device and wait for 120 seconds
             /*caps.setCapability("avd","testAVD");
