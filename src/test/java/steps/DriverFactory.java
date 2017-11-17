@@ -28,8 +28,8 @@ public class DriverFactory {
             caps.setCapability("platformName", "Android");
             caps.setCapability("deviceName", "Google_Nexus_5X");
             caps.setCapability("newCommandTimeout",120);
-//            caps.setCapability("avd","google_2");
-//            caps.setCapability("avdReadyTimeout",120000);
+            caps.setCapability("avd","google_2");
+            caps.setCapability("avdReadyTimeout",120000);
 //            caps.setCapability("udid",udid);
             caps.setCapability("app","app/Paytm_net.one97.paytm.apk");
             caps.setCapability("clearSystemFiles",true);
