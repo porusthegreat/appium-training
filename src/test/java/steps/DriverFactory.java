@@ -3,15 +3,22 @@ package steps;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
     protected static AppiumDriver driver;
+    List<String> devices;
 
     public DriverFactory() throws MalformedURLException{
-        initialize();
+            initialize();
     }
 
     public void initialize() throws MalformedURLException{
@@ -19,21 +26,11 @@ public class DriverFactory {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability("appium-version", "1.7.1");
             caps.setCapability("platformName", "Android");
-//            caps.setCapability("platformVersion", "6.0");
             caps.setCapability("deviceName", "Google_Nexus_5X");
             caps.setCapability("newCommandTimeout",120);
-            caps.setCapability("avd","testAVD");
-            caps.setCapability("avdReadyTimeout",120000);
-
-            //Launch virtual device and wait for 120 seconds
-            /*caps.setCapability("avd","testAVD");
-            caps.setCapability("avdReadyTimeout",120000);
-            caps.setCapability("app","app/quikr.apk");
-            caps.setCapability("appActivity","com.quikr.old.SplashActivity");*/
-
-            /*caps.setCapability("appPackage","net.one97.paytm");
-            caps.setCapability("appActivity","net.one97.paytm.AJRJarvisSplash");*/
-
+//            caps.setCapability("avd","google_2");
+//            caps.setCapability("avdReadyTimeout",120000);
+//            caps.setCapability("udid",udid);
             caps.setCapability("app","app/Paytm_net.one97.paytm.apk");
             caps.setCapability("clearSystemFiles",true);
 

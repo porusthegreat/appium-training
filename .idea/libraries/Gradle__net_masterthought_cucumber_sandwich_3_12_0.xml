@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.masterthought:cucumber-sandwich:3.12.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.masterthought/cucumber-sandwich/3.12.0/f8cbeba9b1000090262e563203a03c03a40d45a0/cucumber-sandwich-3.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.masterthought/cucumber-sandwich/3.12.0/e16dce56e334304cddd1db418085c5d61ca7af8d/cucumber-sandwich-3.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
