@@ -47,10 +47,10 @@ public class StartingSteps {
     }
 
 
-    protected void captureScreenShotInCaseOfFailure(Scenario scenario) {
+    protected void captureScreenShotInCaseOfFailure(Scenario scenario) throws MalformedURLException {
         if (scenario.isFailed()) {
             String screenShotFolder = "screenshots";
-            File screenShotSourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            File screenShotSourceFile = ((TakesScreenshot) new DriverFactory().getAppiumDriver()).getScreenshotAs(OutputType.FILE);
             try {
                 createFolder(screenShotFolder);
                 String fileName = scenario.getName();
