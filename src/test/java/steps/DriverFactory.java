@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
     protected static AppiumDriver driver;
-    List<String> devices;
 
     public DriverFactory() throws MalformedURLException{
             initialize();
@@ -28,10 +27,10 @@ public class DriverFactory {
             caps.setCapability("platformName", "Android");
             caps.setCapability("deviceName", "Google_Nexus_5X");
             caps.setCapability("newCommandTimeout",120);
-            caps.setCapability("avd","google_2");
-            caps.setCapability("avdReadyTimeout",120000);
-//            caps.setCapability("udid",udid);
-            caps.setCapability("app","app/Paytm_net.one97.paytm.apk");
+            caps.setCapability("udid",System.getProperty("udid"));
+//            caps.setCapability("avd","google_2");
+//            caps.setCapability("avdReadyTimeout",120000);
+            caps.setCapability("app","/Users/purushothamreddy/Documents/training/appium-training/app/Paytm_net.one97.paytm.apk");
             caps.setCapability("clearSystemFiles",true);
 
             driver = new AppiumDriver(new URL("http://0.0.0.0:4723/wd/hub"), caps);

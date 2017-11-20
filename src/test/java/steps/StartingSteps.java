@@ -18,11 +18,11 @@ import static steps.DriverFactory.driver;
 
 
 public class StartingSteps {
-    AppiumDriverLocalService appiumService;
+//    AppiumDriverLocalService appiumService;
 
     @Before
     public void startAppiumServer() throws MalformedURLException {
-        System.out.println("Inside setup method");
+       /* System.out.println("Inside setup method");
         int port = 4723;
         String osName = System.getProperty("os.name");
         if (osName.contains("Mac")) {
@@ -33,17 +33,21 @@ public class StartingSteps {
                     .usingPort(port)
                     .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
                     .withLogFile(new File("build/appium.log")));
-            appiumService.start();
+            appiumService.start();*/
             new DriverFactory().getAppiumDriver();
         }
 
-    }
+//    }
 
     @After
     public void stopAppiumServer(Scenario scenario) throws MalformedURLException {
         captureScreenShotInCaseOfFailure(scenario);
+        if(scenario.isFailed()){
+            final byte[] screenshot = new DriverFactory().getAppiumDriver().getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot,"image/png");
+        }
         new DriverFactory().destroyAppiumDriver();
-        appiumService.stop();
+//        appiumService.stop();
     }
 
 
