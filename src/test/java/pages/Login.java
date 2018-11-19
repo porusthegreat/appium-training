@@ -1,6 +1,7 @@
 package pages;
 
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,7 +28,11 @@ public class Login extends BasePage{
     }
 
     public String verifyLoginScreen() {
-        new BasePage(driver).waitForElementDisplay(allow_permissions.get(0));
+        try {
+            new BasePage(driver).waitForElementDisplay(allow_permissions.get(0));
+        }catch (IndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
         System.out.println("============================size of list is "+allow_permissions.size()+"===========================");
         while (allow_permissions.iterator().hasNext()){
             allow_permissions.get(0).click();

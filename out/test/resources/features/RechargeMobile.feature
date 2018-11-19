@@ -6,6 +6,7 @@ Feature: As a user I should be able to recharge from paytm
     Then user should be able to see Login Screen
     And user skips the login
 
+  @16Nov
   Scenario: Mobile Recharge - Prepaid
     When user chooses to recharge for prepaid mobile
     And user enters mobile number as 9901897419
@@ -13,6 +14,7 @@ Feature: As a user I should be able to recharge from paytm
     And user chooses to recharge with Rs. 30
     And user clicks on proceed button
 
+  @16Nov
   Scenario: Mobile Recharge - Postpaid
     When user chooses to recharge for postpaid mobile
     And user enters mobile number as 9901897419

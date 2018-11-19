@@ -12,12 +12,15 @@ apply plugin: 'java'
 // In this section you declare where to find the dependencies of your project
 repositories {
     mavenCentral()
+    maven { url "http://dl.bintray.com/epam/reportportal" }
+    maven { url 'https://jitpack.io' }
 }
 buildscript {
     repositories {
         mavenCentral()
+        maven { url "http://dl.bintray.com/epam/reportportal" }
+        maven { url 'https://jitpack.io' }
     }
-
     dependencies {
         classpath "org.codehaus.gpars:gpars:1.2.1",
                 "net.masterthought:cucumber-reporting:0.4.0",
@@ -32,6 +35,8 @@ dependencies {
     testCompile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'net.masterthought:cucumber-sandwich:3.12.0'
+    compile 'com.github.reportportal:agent-java-cucumber:73bee44'
+    compile 'com.epam.reportportal:logger-java-logback:3.0.0'
 }
 
 def startServer() {
@@ -73,13 +78,13 @@ task runAllTest() {
         def devices = getDevices()
         def poolSize = devices.size()
         println "Total number of connected device -- " + poolSize
-        GParsPool.withPool(poolSize) {
+        GParsPool.withPool(1) {
             devices.eachParallel { String device ->
                 javaexec {
                     main = "cucumber.api.cli.Main"
                     classpath = sourceSets.test.runtimeClasspath
                     args = ["-p", "pretty", "-p", "json:${reporting.baseDir}/cucumber/cucumber.json", "--glue", "steps", "-t", tags,
-                            "${project.projectDir}/src/test/resources/features/"]
+                            "${project.projectDir}/src/test/resources/features/", "--plugin", "steps.RpListener"]
                     systemProperties = [
                            "udid" : System.setProperty("udid", device)
                     ]
